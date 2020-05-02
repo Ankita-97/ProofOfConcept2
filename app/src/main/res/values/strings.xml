@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Proof ofConcept</string>
     <string name="text1">News Title</string>
+    <string name="text2">News Description</string>
 </resources>
