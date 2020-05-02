@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
                         newsbb.add(newsb);
 
                     } catch (JSONException e) {
-
                         e.printStackTrace();
                         progressDialog.dismiss();
                     }
@@ -72,11 +71,11 @@ public class MainActivity extends AppCompatActivity {
                 newsAdapter.notifyDataSetChanged();
                 progressDialog.dismiss();
             }
-        }, new Response.ErrorListener() {
+        }, new Response.ErrorListener(){
             @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("Volley", error.toString());
-                progressDialog.dismiss();
+             public void onErrorResponse(VolleyError error){
+                 Log.e("Volley", error.toString());
+                 progressDialog.dismiss();
             }
         });
 
