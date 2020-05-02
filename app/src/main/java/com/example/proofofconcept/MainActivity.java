@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        this.setTitle("About Canada");
+
         recyclerView = findViewById(R.id.recycleview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         newsAdapter = new NewsAdapter();
@@ -41,8 +43,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ingestData(){
+
         final ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Fetching data...");
+        progressDialog.setMessage("Loading...");
         progressDialog.show();
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
