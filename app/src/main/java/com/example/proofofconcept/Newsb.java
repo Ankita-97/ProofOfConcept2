@@ -21,14 +21,14 @@ public class Newsb {
         return description;
     }
 
-    public void setDescription(){
+    public void setDescription(String description){
         this.description = description;
     }
 
     public String getImageHref(){
         return imageHref;
     }
-    public void setImageHref(){
+    public void setImageHref(String imageHref){
         this.imageHref = imageHref;
     }
 }
